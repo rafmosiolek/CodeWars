@@ -42,3 +42,10 @@ function palindromize(number) {
   }
     return j.toString() + " " + str;
 }
+
+
+
+
+
+
+
