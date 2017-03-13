@@ -19,3 +19,17 @@ And the final string to return is 'Cdwr oeas'
 
 Enjoy.
 */
+
+function sortMyString(S) {
+    var odd = "";
+    var even = "";
+    
+    for (var i in S){
+      if (i % 2 === 0) {
+        even += S[i];
+      } else {
+        odd += S[i];
+      }
+    }
+    return even + " " + odd;
+}
