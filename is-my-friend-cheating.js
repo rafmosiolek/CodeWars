@@ -46,3 +46,15 @@ function removeNb (n) {
   }
   return array;
 }
+
+
+function removeNb (n) {
+  var sum =n*(n+1)/2,
+      result=[];
+  for(let a = 1, b; a<n; a++){
+    b = (sum-a)/(a+1);
+    if( 0 < b && b < n+1 && b== ~~b) result.push([a,b]);
+  }
+  return result;
+}
+
